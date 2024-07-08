@@ -1,0 +1,30 @@
+@font-face {
+     font-family: 'MyFont1';
+     src: url('./assets/fonts/losta-masta-medium.ttf') format('truetype');
+   }
+   
+   .fontFamily-MyFont1 {
+     font-family: 'MyFont1', sans-serif;
+   }
+   
+   @font-face {
+     font-family: 'MyFont2';
+     src: url('./assets/fonts/moon-bold.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   .fontFamily-MyFont2 {
+     font-family: 'MyFont2', sans-serif;
+   }
+   
+   @font-face {
+     font-family: 'MyFont3';
+     src: url('./assets/fonts/Daily\ Challenge\ DEMO.otf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+   .fontFamily-MyFont3 {
+     font-family: 'MyFont3', sans-serif;
+   }

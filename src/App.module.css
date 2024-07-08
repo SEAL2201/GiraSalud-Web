@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'MyFont1';
+  src: url('./assets/fonts/losta-masta-medium.ttf') format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fontFamily-MyFont1 {
+  font-family: 'MyFont1', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'MyFont2';
+  src: url('./assets/fonts/moon-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fontFamily-MyFont2 {
+  font-family: 'MyFont2', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'MyFont3';
+  src: url('./assets/fonts/Daily\ Challenge\ DEMO.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fontFamily-MyFont3 {
+  font-family: 'MyFont3', sans-serif;
 }
