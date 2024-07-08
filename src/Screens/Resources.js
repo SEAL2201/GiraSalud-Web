@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiToolbox, GiCrafting, GiBookshelf, GiMusicalNotes } from "react-icons/gi";
 import styles from '../App.module.css';
+import '../App.module.css';
 
 const resources = [
   {

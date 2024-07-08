@@ -1,32 +1,32 @@
 .howWeWork {
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    flex-direction: column;
-    background: linear-gradient(180deg, #1a1826, #413b5e);
-  }
-  
-  .title {
-    font-size: 3em;
-    color: #f1f1f1;
-    font-weight: 400;
-    text-align: center;
-  }
-  .professional-container {
-    background-color: #f1ece6; /* Color de fondo específico */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    margin-bottom: 20px; /* Margen inferior */
-  }
-  @font-face {
-    font-family: 'Demo Regular';
-    src: url('../assets/fonts/Daily Challenge DEMO.otf') format('truetype');
-  }
-  
-  body {
-    font-family: 'Demo Regular', Arial, sans-serif;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Demo Regular', Arial, sans-serif;
-  }
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  background: linear-gradient(180deg, #1a1826, #413b5e);
+}
+
+.title {
+  font-size: 3em;
+  color: #f1f1f1;
+  font-weight: 400;
+  text-align: center;
+}
+.professional-container {
+  background-color: #f1ece6; /* Color de fondo específico */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+}
+@font-face {
+  font-family: 'Demo Regular';
+  src: url('../assets/fonts/Daily Challenge DEMO.otf') format('truetype');
+}
+
+body {
+  font-family: 'Demo Regular', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Demo Regular', Arial, sans-serif;
+}

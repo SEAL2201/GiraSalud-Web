@@ -10,6 +10,7 @@ import exampleImage3 from '../assets/example3.jpg';
 import exampleImage4 from '../assets/milroses.jpg';
 import exampleImage5 from '../assets/example4.jpg';
 import exampleImage6 from '../assets/pexels-cliff-booth-4058226.jpg'
+import '../App.module.css';
 
 const services = [
   {

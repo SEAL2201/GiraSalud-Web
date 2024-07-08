@@ -4,6 +4,7 @@ import paragraphImage from '../assets/GiraSalud Nosotros.jpg';
 import girasolIcon from '../assets/girasol.png'; // Asegúrate de tener esta imagen en tu carpeta de assets
 import './Us.css';
 import styles from '../App.module.css';
+import '../App.module.css';
 
 const professionals = [
   {
