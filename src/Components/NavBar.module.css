@@ -1,142 +1,141 @@
+.navBarContainer {
+  width: 100%;
+}
+
+.topBar {
+  background-color: #f6921e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .navBar {
-    display: flex;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    justify-content: space-between; /* Permite separar logo, enlaces, y contacto */
-    align-items: center;
-    background-color: #f7941d;
-  }
-  
-  .navOpen {
-    display: flex;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: #4a4564;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .navLink {
-    font-size: 60px; /* Tamaño de fuente grande para los enlaces */
-    display: flex;
-    font-size: 2em;
-    font-weight: 400;
-    color: #f1f1f1;
-    padding-top: 90px;
-  }
-  
-  .navLink:hover {
-    cursor: pointer;
-  }
-  
-  @keyframes animacionborder {
-    0% {
-      height: 0px;
-    }
-    100% {
-      height: 1px;
-    }
-  }
-  
-  .logoContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 20px; /* Añade margen si es necesario */
-  }
-  
-  .logo {
-    color: #f1f1f1;
-    font-weight: 600;
-    height: 50px; /* Ajusta el tamaño de la imagen del logo según sea necesario */
-  }
-  
-  @media (min-width: 800px) {
-    .logo {
-      font-size: 1.5em;
-    }
-    .navBar {
-      align-content: center;
-      height: 50px;
-    }
-    .linksContainer {
-      display: flex;
-      flex-grow: 1;
-      justify-content: center;
-    }
-    .navLink {
-      font-weight: 400;
-      padding-top: 4px;
-      font-size: 2.4em; /* Ajusta el tamaño de la fuente para pantallas grandes */
-      margin: 0 15px;
-      transition: 0.5s;
-    }
-    .navLink:hover {
-      font-size: 3.5em; /* Ajusta el tamaño de la fuente al hacer hover */
-    }
-    .navOnScroll {
-      align-content: center;
-      height: 50px;
-      background-color: #4a4564;
-    }
-  }
-  
-  .navOnScroll {
-    display: flex;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f3bc41;
-  }
-  
-  .contactLinkContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 20px; /* Añade margen si es necesario */
-  }
-  
-  .contactLink {
-    background-color: transparent;
-    /* border: 2px solid #fff; */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  .contactLinkContainer {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-  }
-  
-  .contactLink:hover {
-    background-color: #565B80;
-    color: #fff;
-  }
-  
-  .socialIconsContainer {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espacio entre los iconos */
-  }
-  
-  .socialIcon {
-    color: #f1f1f1; /* Color de los iconos */
-    transition: color 0.3s;
-  }
-  
-  .socialIcon:hover {
-    color: #ffd490b5; /* Color cuando se pasa el mouse por encima */
-  }
-  
-  
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navOnScroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 200px; /* Ajusta el tamaño del logo aquí */
+  height: auto;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000;
+}
+
+.logoSubtext {
+  font-size: 16px;
+  color: gray;
+}
+
+.linksContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+  font-size: 24px; /* Tamaño de fuente aumentado */
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 24px; /* Tamaño de fuente aumentado */
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.navButton:hover {
+  background-color: #f0a532;
+  color: white;
+}
+
+.border {
+  height: 2px;
+  background-color: black;
+}
+
+.contactLinkContainer {
+  display: flex;
+  align-items: center;
+}
+
+.contactButton {
+  background-color: transparent;
+  /* border: 2px solid black; */
+  color: black;
+  padding: 10px 20px;
+  font-size: 24px; /* Tamaño de fuente aumentado */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contactButton:hover {
+  background-color: #f0a532;
+  color: white;
+}
+
+.socialButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socialButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

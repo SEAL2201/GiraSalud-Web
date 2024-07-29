@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { AiOutlineMenu, AiOutlineClose, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import { FaTiktok } from "react-icons/fa"; // Font Awesome
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiFillFacebook,
+  AiFillInstagram,
+  AiOutlinePhone,
+  AiOutlineMail,
+} from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
 import styles from "./NavBar.module.css";
 import { useScrollPosition } from "../Hooks/scrollPosition";
-// import logo from "../assets/logo1.jpeg"; 
+import logo from "../assets/logo1.jpeg";
 
 const NavBar = () => {
   const [navBarOpen, setNavBarOpen] = useState(false);
@@ -38,55 +45,72 @@ const NavBar = () => {
   const scrollPosition = useScrollPosition();
 
   return (
-    <div
-      className={
-        navBarOpen
-          ? styles.navOpen
-          : scrollPosition > 0
-          ? styles.navOnScroll
-          : styles.navBar
-      }
-    >
-      <div className={styles.logoContainer}>
-        {/* <img src={logo} alt="Logo" className={styles.logo} /> */}
+    <div className={styles.navBarContainer}>
+      <div className={styles.topBar}>
+        <div className={styles.contactInfo}>
+          <AiOutlinePhone size={20} />
+          <span>1 (234) 567-891</span>
+          <AiOutlineMail size={20} />
+          <span>info@the7psy.com</span>
+          <span>Monday – Friday 10 AM – 8 PM</span>
+        </div>
+        <div className={styles.socialIcons}>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066695102480"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialButton}
+          >
+            <AiFillFacebook size={20} />
+          </a>
+          <a
+            href="https://www.instagram.com/girasalud_ec/?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialButton}
+          >
+            <AiFillInstagram size={20} />
+          </a>
+          <a
+            href="https://www.tiktok.com/@girasaludec"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialButton}
+          >
+            <FaTiktok size={20} />
+          </a>
+        </div>
       </div>
-      {!navBarOpen && windowDimension.width < 800 ? (
-        <AiOutlineMenu
-          color="#f1f1f1"
-          onClick={() => setNavBarOpen(!navBarOpen)}
-          size={25}
-        />
-      ) : (
-        windowDimension.width < 800 && (
-          <AiOutlineClose
+      <div
+        className={
+          navBarOpen
+            ? styles.navOpen
+            : scrollPosition > 0
+            ? styles.navOnScroll
+            : styles.navBar
+        }
+      >
+        <div className={styles.logoContainer}>
+          <img src={logo} alt="Logo" className={styles.logo} />
+        </div>
+        {!navBarOpen && windowDimension.width < 800 ? (
+          <AiOutlineMenu
+            color="#000"
             onClick={() => setNavBarOpen(!navBarOpen)}
-            color="#f1f1f1"
             size={25}
           />
-        )
-      )}
-      {navBarOpen && (
-        <ul className={styles.linksContainer}>
-          {links.map(({ id, link }) => (
-            <div key={id}>
-              <Link
-                onClick={() => setNavBarOpen(false)}
-                to={link}
-                smooth
-                duration={500}
-                className={styles.navLink}
-              >
-                {link === "Inicio" ? "Inicio" : link}
-              </Link>
-              <div className={styles.border}></div>
-            </div>
-          ))}
-        </ul>
-      )}
-      {windowDimension.width > 800 && (
-        <>
+        ) : (
+          windowDimension.width < 800 && (
+            <AiOutlineClose
+              onClick={() => setNavBarOpen(!navBarOpen)}
+              color="#000"
+              size={25}
+            />
+          )
+        )}
+        {navBarOpen && (
           <ul className={styles.linksContainer}>
-            {links.map(({ link, id }) => (
+            {links.map(({ id, link }) => (
               <div key={id}>
                 <Link
                   onClick={() => setNavBarOpen(false)}
@@ -95,36 +119,45 @@ const NavBar = () => {
                   duration={500}
                   className={styles.navLink}
                 >
-                  {link === "Nosotros" ? "Nosotros" : link}
+                  <button className={styles.navButton}>{link}</button>
                 </Link>
                 <div className={styles.border}></div>
               </div>
             ))}
           </ul>
-          <div className={styles.socialIconsContainer}>
-            <a href="https://www.facebook.com/profile.php?id=100066695102480" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <AiFillFacebook size={25} />
-            </a>
-            <a href="https://www.instagram.com/girasalud_ec/?hl=es" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <AiFillInstagram size={25} />
-            </a>
-            <a href="https://www.tiktok.com/@girasaludec" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
-              <FaTiktok size={25} />
-            </a>
-          </div>
-          <div className={styles.contactLinkContainer}>
-            <Link
-              onClick={() => setNavBarOpen(false)}
-              to="Contact"
-              smooth
-              duration={500}
-              className={styles.contactLink}
-            >
-              Contactanos
-            </Link>
-          </div>
-        </>
-      )}
+        )}
+        {windowDimension.width > 800 && (
+          <>
+            <ul className={styles.linksContainer}>
+              {links.map(({ link, id }) => (
+                <div key={id}>
+                  <Link
+                    onClick={() => setNavBarOpen(false)}
+                    to={link}
+                    smooth
+                    duration={500}
+                    className={styles.navLink}
+                  >
+                    <button className={styles.navButton}>{link}</button>
+                  </Link>
+                  <div className={styles.border}></div>
+                </div>
+              ))}
+            </ul>
+            <div className={styles.contactLinkContainer}>
+              <Link
+                onClick={() => setNavBarOpen(false)}
+                to="Contact"
+                smooth
+                duration={500}
+                className={styles.contactLink}
+              >
+                <button className={styles.contactButton}>Contáctanos</button>
+              </Link>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };
