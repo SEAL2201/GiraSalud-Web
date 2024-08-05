@@ -6,6 +6,21 @@
   background: linear-gradient(0deg, #1a1826, #413b5e);
 }
 
+.serviceContainer {
+  width: 298px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.serviceTitle {
+  font-size: 2em;
+  text-align: left;
+  color: #f1f1f1;
+}
+
 .webImage {
   width: 298px;
   height: 193px;
@@ -27,4 +42,32 @@
     width: 596px;
     height: 386px;
   }
+}
+
+/* Añadido para centrar texto en los botones de Disclosure */
+.disclosureButtonContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Añadido para centrar el texto de cada servicio en la sección de detalles */
+.serviceDetailTitle {
+  text-align: center;
+}
+.serviceDescriptionList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Quita el estilo predeterminado de la lista */
+}
+
+.serviceDescriptionList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 500x; /* Ajusta el espacio entre los elementos de la lista */
+}
+
+.serviceDescriptionList li span:first-child {
+  margin-right: 2px; /* Espacio entre el icono de girasol y el texto */
 }

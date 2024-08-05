@@ -28,3 +28,34 @@
    .fontFamily-MyFont3 {
      font-family: 'MyFont3', sans-serif;
    }
+
+   .serviceTitle {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .serviceContainer {
+    transition: all 0.3s ease;
+  }
+  
+  .serviceContainer:hover {
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    border: 2px solid #4a90e2; /* Color del borde al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+    border-radius: 10px; /* Radio de borde si quieres bordes redondeados */
+  }
+  
+  .bg-green {
+    background-color: #d1e7dd; /* Ajusta el color de fondo según tu diseño */
+  }
+  
+  .btnGradient {
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    color: white; /* Color del texto */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el fondo y el tamaño */
+  }
+  
+  .btnGradient:hover {
+    background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+    transform: scale(1.05); /* Efecto de zoom suave al pasar el mouse */
+  }

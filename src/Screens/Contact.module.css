@@ -54,3 +54,12 @@
   margin-top: 5px;
   font-size: 1em;
 }
+
+.btn-gradient {
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+}

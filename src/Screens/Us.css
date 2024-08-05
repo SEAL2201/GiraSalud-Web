@@ -12,12 +12,32 @@
   font-weight: 400;
   text-align: center;
 }
-.professional-container {
-  background-color: #f1ece6; /* Color de fondo específico */
-  border-radius: 20px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  margin-bottom: 20px; /* Margen inferior */
+
+.professional-image-container {
+  width: 305px; /* Tamaño del contenedor redondo */
+  height: 310px; /* Tamaño del contenedor redondo */
+  border-radius: 50%;
+  background-color: #9CBC99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative; /* Añade posición relativa para poder ajustar la imagen dentro */
 }
+
+.professional-image {
+  width: 80%;
+  height: 80%;
+  /* object-fit: cover; Ajusta la imagen para cubrir el contenedor */
+}
+
+.professional-image.alexander {
+  transform: scale(1.2); /* Ajusta el tamaño de la imagen específica */
+  position: relative; /* Añade posición relativa */
+  left: -30px; /* Ajusta el valor para mover la imagen a la izquierda */
+}
+
 @font-face {
   font-family: 'Demo Regular';
   src: url('../assets/fonts/Daily Challenge DEMO.otf') format('truetype');

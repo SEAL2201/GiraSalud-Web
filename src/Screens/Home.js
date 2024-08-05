@@ -20,7 +20,7 @@ const Home = () => {
           <div className="flex flex-col justify-center items-left h-full bg-black bg-opacity-50">
             <div className="text-left text-white">
               <h1 className="text-9xl font-bold animate-pulse">GIRASALUD</h1>
-              <h1 className="text-7xl font-bold animate-pulse">EL PODER DE ELEGIR</h1>
+              <h1 className="text-5xl font-bold animate-pulse">"EL PODER DE ELEGIR"</h1>
             </div>
           </div>
         </div>

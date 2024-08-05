@@ -5,8 +5,9 @@ import {
   AiOutlineClose,
   AiFillFacebook,
   AiFillInstagram,
-  AiOutlinePhone,
-  AiOutlineMail,
+  AiTwotonePhone,
+  AiTwotoneMail,
+  AiTwotoneEnvironment,
 } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import styles from "./NavBar.module.css";
@@ -48,20 +49,21 @@ const NavBar = () => {
     <div className={styles.navBarContainer}>
       <div className={styles.topBar}>
         <div className={styles.contactInfo}>
-          <AiOutlinePhone size={20} />
-          <span>1 (234) 567-891</span>
-          <AiOutlineMail size={20} />
-          <span>info@the7psy.com</span>
-          <span>Monday – Friday 10 AM – 8 PM</span>
+          <AiTwotonePhone size={20} />
+          <span>0960120939</span>
+          <AiTwotoneMail size={20} />
+          <span>GiraSalud@gmail.com</span>
+          <AiTwotoneEnvironment size={20} />
+          <span>C. Belisario Quevedo 4-43, Latacunga 050104</span>
         </div>
-        <div className={styles.socialIcons}>
+        <div className={styles.contactInfo}>
           <a
             href="https://www.facebook.com/profile.php?id=100066695102480"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.socialButton}
           >
-            <AiFillFacebook size={20} />
+            <AiFillFacebook size={30} /> {/* Ajusta el tamaño a 30 */}
           </a>
           <a
             href="https://www.instagram.com/girasalud_ec/?hl=es"
@@ -69,7 +71,7 @@ const NavBar = () => {
             rel="noopener noreferrer"
             className={styles.socialButton}
           >
-            <AiFillInstagram size={20} />
+            <AiFillInstagram size={30} /> {/* Ajusta el tamaño a 30 */}
           </a>
           <a
             href="https://www.tiktok.com/@girasaludec"
@@ -77,7 +79,7 @@ const NavBar = () => {
             rel="noopener noreferrer"
             className={styles.socialButton}
           >
-            <FaTiktok size={20} />
+            <FaTiktok size={30} /> {/* Ajusta el tamaño a 30 */}
           </a>
         </div>
       </div>
