@@ -48,15 +48,7 @@ const NavBar = () => {
   return (
     <div className={styles.navBarContainer}>
       <div className={styles.topBar}>
-        <div className={styles.contactInfo}>
-          <AiTwotonePhone size={20} />
-          <span>0960120939</span>
-          <AiTwotoneMail size={20} />
-          <span>GiraSalud@gmail.com</span>
-          <AiTwotoneEnvironment size={20} />
-          <span>C. Belisario Quevedo 4-43, Latacunga 050104</span>
-        </div>
-        <div className={styles.contactInfo}>
+        <div className={styles.socialIcons}>
           <a
             href="https://www.facebook.com/profile.php?id=100066695102480"
             target="_blank"
@@ -81,6 +73,14 @@ const NavBar = () => {
           >
             <FaTiktok size={30} /> {/* Ajusta el tamaño a 30 */}
           </a>
+        </div>
+        <div className={styles.contactInfo}>
+          <AiTwotonePhone size={20} />
+          <span>0960120939</span>
+          <AiTwotoneMail size={20} />
+          <span>GiraSalud@gmail.com</span>
+          <AiTwotoneEnvironment size={20} />
+          <span>C. Belisario Quevedo 4-43, Latacunga 050104</span>
         </div>
       </div>
       <div

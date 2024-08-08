@@ -8,64 +8,40 @@ import { ChevronUpIcon } from '@heroicons/react/20/solid';
 const services = [
   {
     title: "ATENCION PSICOLOGICA",
-    description: [
-      { text: "Atención individual", link: "/atencion-individual" },
-      { text: "Atención para padres", link: "/atencion-para-padres" },
-      { text: "Atención niños y adolescentes", link: "/atencion-ninos-adolescentes" },
-      { text: "Terapia de pareja", link: "/terapia-de-pareja" },
-      { text: "Orientación vocacional", link: "/orientacion-vocacional" }
-    ],
     icon: faBrain,
     iconColor: "#827054",
     details: [
       {
         title: "- Atención psicológica individual",
-        // image: exampleImage
       },
       {
         title: "- Atención psicológica niños",
-        // image: exampleImage3
       },
       {
         title: "- Atención psicológica adolescentes",
-        // image: exampleImage2
       }
     ]
   },
   {
     title: "ATENCION ONLINE - PSICOCLICK",
-    description: [
-      { text: "Atención individual", link: "/atencion-individual-online" },
-      { text: "Atención para padres", link: "/atencion-para-padres-online" },
-      { text: "Atención niños y adolescentes", link: "/atencion-ninos-adolescentes-online" },
-      { text: "Terapia de pareja", link: "/terapia-de-pareja-online" },
-      { text: "Atención duelo migratorio", link: "/atencion-duelo-migratorio" }
-    ],
     icon: faDesktop,
     iconColor: "#827054",
     details: [
       {
         title: "Sesiones de terapia en línea",
-        // image: exampleImage6
       }
     ]
   },
   {
     title: "FORMACION FAMILIAR Y EMPRESARIAL",
-    description: [
-      { text: "Programas para familias", link: "/programas-familias" },
-      { text: "Programas para empresas", link: "/programas-empresas" }
-    ],
     icon: faUsers,
     iconColor: "#827054",
     details: [
       {
         title: "- Formación para familias",
-        // image: exampleImage5
       },
       {
         title: "- Formación para empresas",
-        // image: exampleImage4
       }
     ]
   },
@@ -81,7 +57,7 @@ const Services = () => {
         <br />
         <h2 className={`text-5xl font-extrabold text-gray-900 text-center ${styles['fontFamily-MyFont2']}`}>SERVICIOS</h2>
         <br />
-        <p className={`text-6xl text-gray-600 text-center ${styles['fontFamily-MyFont3']}`}>
+        <p className={`text-4xl text-gray-600 text-center ${styles['fontFamily-MyFont1']}`}>
           Somos GIRASALUD, un equipo de psicólogos que contribuye a la prevención y promoción de la salud mental por medio de actividades artísticas con material lúdico y terapias psicológicas. Es por ello que brindamos un espacio de salud mental lúdico y seguro donde puedes ser tú mismo.
         </p>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -103,23 +79,20 @@ const Services = () => {
                     <ChevronUpIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-gray-500`} />
                   </Disclosure.Button>
                   <Disclosure.Panel className="pt-4 text-lg text-gray-600">
-                    <ul className={`${styles.serviceDescriptionList}`}>
+                    {/* <ul className="list-disc pl-5 space-y-2">
                       {service.description.map((desc, index) => (
                         <li key={index} className={`text-3xl ${styles['fontFamily-MyFont3']}`}>
-                          <a href={desc.link} className="text-black-600 hover:underline text-5xl text-center">
-                            <span className="text-yellow-500">🌻</span> {/* Literal de girasol */}
-                            <span className="ml-2">{desc.text}</span>
-                          </a>
+                          <span className="ml-2">{desc.text}</span>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                     <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {service.details.map((detail, index) => (
                         <div key={index} className={styles.serviceContainer}>
                           {detail.image && (
                             <img src={detail.image} alt={detail.title} className={styles.webImage} />
                           )}
-                          <p className={`text-3xl font-medium ${styles['fontFamily-MyFont3']} ${styles.serviceDetailTitle}`}></p>
+                          <p className={`text-4xl font-medium ${styles['fontFamily-MyFont3']} ${styles.serviceDetailTitle}`}>{detail.title}</p>
                         </div>
                       ))}
                     </div>

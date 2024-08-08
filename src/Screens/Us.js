@@ -39,11 +39,11 @@ const Nosotros = () => {
       <div className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mt-4 flex flex-col sm:flex-row items-center">
-            <div className="sm:w-1/2 text-5xl text-gray-600">
+            <div className={`sm:w-1/2 text-4xl text-gray-600 ${styles['fontFamily-MyFont1']}`}>
               <ul>
-                <li>Somos GIRASALUD, un equipo de psicólogos que promociona la salud mental por medio de actividades artísticas con material lúdico y terapias psicológicas.</li>
+                <li>Somos Girasalud, un equipo de psicólogos que promociona la salud mental por medio de actividades artísticas con material lúdico y terapias psicológicas.</li>
                 <br></br>
-                <li><img src={girasolIcon} alt="Girasol" className="inline-block w-10 h-10 mx-2"/>En GIRASALUD, empoderamos a los padres de hijos con dificultades emocionales y de conducta con el objetivo de mejorar su salud mental y calidad de vida.</li><br></br>
+                <li><img src={girasolIcon} alt="Girasol" className="inline-block w-10 h-10 mx-2"/>En Girasalud, empoderamos a los padres de hijos con dificultades emocionales y de conducta con el objetivo de mejorar su salud mental y calidad de vida.</li><br></br>
                 <li><img src={girasolIcon} alt="Girasol" className="inline-block w-10 h-10 mx-2"/>Contribuimos en la prevención y promoción de la salud mental por medio de actividades artísticas con material lúdico; y tratamos el malestar emocional a través de la terapia psicológica.</li><br></br>
                 <li><img src={girasolIcon} alt="Girasol" className="inline-block w-10 h-10 mx-2"/>Ser reconocidos como un espacio de salud mental artístico en la ciudad de Latacunga.</li>
               </ul>
@@ -71,7 +71,7 @@ const Nosotros = () => {
                 </div>
                 <h3 className="mt-6 text-5xl font-bold text-gray-900">{professional.name}</h3>
                 <h3 className="mt-6 text-4xl font-bold text-gray-900">{professional.profesion}</h3>
-                <p className="mt-4 text-4xl text-gray-600">{professional.description}</p>
+                <p className={`mt-4 text-3xl text-gray-500" ${styles['fontFamily-MyFont1']}`}>{professional.description}</p>
               </div>
             ))}
           </div>

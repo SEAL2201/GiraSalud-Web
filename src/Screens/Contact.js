@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2 flex justify-center items-center p-4 md:p-0">
             <img
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full"
               src={contactImage}
               alt="Contáctanos"
             />
@@ -59,7 +59,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className={`${styles.btnGradient} w-full text-5xl md:text-4xl py-2 px-4 border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2`}
+                className={`${styles.btnGradient} ${styles.btnGrow} w-full text-5xl md:text-4xl py-2 px-4 border border-transparent rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2`}
               >
                 Enviar
               </button>

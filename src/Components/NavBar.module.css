@@ -10,6 +10,11 @@
   padding: 10px 20px;
 }
 
+.socialIcons {
+  display: flex;
+  gap: 0px; /* Espacio entre íconos */
+}
+
 .contactInfo {
   font-size: 25px;
   display: flex;
@@ -116,14 +121,36 @@
   cursor: pointer;
   border-radius: 5px;
 }
-.contactButton:hover {
+
+/* .contactButton:hover {
   background: linear-gradient(135deg, #00A498 0%, #3FB2A9 100%);
   transform: scale(1.05); /* Efecto de zoom suave al pasar el mouse */
+
+.contactButton {
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 150px; /* Ajusta según sea necesario */
+  height: 50px; /* Ajusta según sea necesario */
+  font-size: 1.2em; /* Ajusta según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.contactButton:hover {
+  background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
 }
 
 .contactButton:hover {
   background-color: #f0a532;
   color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .socialButton {

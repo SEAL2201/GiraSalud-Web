@@ -40,13 +40,17 @@
 }
 
 .form button {
-  width: 90px;
-  height: 40px;
+  width: 100%;
+  height: 60px; /* Ajusta el tamaño según tus necesidades */
   border-radius: 4px;
   background: none;
   border: 1px solid #ffd490b5;
   margin-top: 10px;
   color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .form label {
@@ -62,4 +66,13 @@
 
 .btn-gradient:hover {
   background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+}
+
+.btnGrow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnGrow:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
